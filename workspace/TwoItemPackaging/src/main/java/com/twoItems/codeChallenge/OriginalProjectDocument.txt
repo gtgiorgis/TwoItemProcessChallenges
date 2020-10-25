@@ -1,0 +1,45 @@
+Two Item Packaging Challenge
+Introduction
+	You have a budget for gifts, and you want to buy 2 gifts for your friend. You have decided to spend your
+	entire budget, or at least as much as possible without going over.
+	Your challenge is to select two different items from the list whose sum is less than or equal to your
+	budget.
+Assumptions
+		You have an input file containing a list of gifts you are considering, sorted by price.
+		The input file contains two columns per record,
+		as shown to the right. Each record contains:
+		1. A unique item identifier.
+		2. A price for each item.
+				Hat, 15.00
+				Teddy Bear, 25.75
+				Speaker, 59.99
+				Neckless, 129.95
+				Chair, 145.99
+				Sports Equipment, 209.25
+				Video Game System, 295.95
+Write a program to find two items that consume most of your budget. The program should take two
+inputs:
+1. Your gift budget
+2. A filename that contains a list of items sorted by price
+The program's output should print the identifier and price for both items when a solution is found and
+print "no solution" when unavailable.
+Example Execution
+		Prompt> findPair 200.00 giftList.txt
+		Neckless, 129.95
+		Speaker, 59.99
+		Prompt> findPair 30.00 giftList.txt
+		No solution
+		Prompt> findPair 75.00 giftList.txt
+		Speaker, 59.99
+		Hat, 15.00
+Questions
+	1. What is the performance of the algorithm you implemented? Describe your answer using Big-O
+	notation.
+	2. How would you modify your solution to select three items? Additionally, how would you extend
+	your solution to handle n items?
+	3. Assume your algorithm must be able to process a list with billions of records. What additional
+	considerations would affect your solution's design? What is the performance of the algorithm you implemented? Describe your answer using Big-O notation.
+	2. How would you modify your solution to select three items? Additionally, how would you extend
+	your solution to handle n items?
+	3. Assume your algorithm must be able to process a list with billions of records. What additional
+	considerations would affect your solution's design?
